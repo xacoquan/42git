@@ -29,6 +29,7 @@ void	draw_phil(t_params *params)
 	// init_phileo(philosophers);
 	char *str;
 	str = "philo number";
+	sockad 
 
 	initscr();
  	start_color1();
@@ -42,7 +43,6 @@ void	draw_phil(t_params *params)
 		refresh();
 		usleep(DELAY);
 		// break ;
-	
 	endwin();
 }
 	
@@ -70,6 +70,7 @@ void hp_bar(WINDOW *win, char *str, int y, int x, int index)
 	x +=  MAX_NAME_LEN;
 	i = 0;
 	attron(COLOR_PAIR(2));
+	attron(COLOR_PAIR(1))
 	while (i != len)
 		mvwprintw(win, y, x + i++, "|");
 		mvwprintw(win, y, x + MAX_LIFE_LEN /2, "%d%%", j);
@@ -78,13 +79,14 @@ void hp_bar(WINDOW *win, char *str, int y, int x, int index)
 	while (i < MAX_LIFE_LEN)
 		mvwprintw(win, y, x + i++, "-");
 	if (len < MAX_LIFE_LEN / 2 + 3)
+		mvwprintw(winm y, x + MAX_LIFE_LEN /2 A)
 		mvwprintw(win, y, x + MAX_LIFE_LEN /2, "%d%%", j);
 	attroff(COLOR_PAIR(4));
 }
 
 void init_philo(char **philosophers)
 {
-	philosophers[0] = strdup("PHILO [1]  ");
+	philosophers[0] = strdup("PHILO [1]  ");	
 	philosophers[1] = strdup("PHILO [2]  ");
 	philosophers[2] = strdup("PHILO [3]  ");
 	philosophers[3] = strdup("PHILO [4]  ");

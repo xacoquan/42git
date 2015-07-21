@@ -34,7 +34,6 @@ t_phisolophe		create_philosopher(void *param)
 	philo.last_eat = params->birth;
 	philo.last_sec = params->birth;
 	philo.turn = 0;
-	params->life = philo.life;
 	// draw_phil(*params);
 	return (philo);
 }
@@ -64,6 +63,7 @@ int					try_eating(t_phisolophe *philo)
 	{
 		if (pthread_mutex_unlock(&(g_chopsticks[philo->id])))
 		{
+
 			g_nobody_died = 0;
 			return (0);
 		}
@@ -196,6 +196,7 @@ int					update_state(t_phisolophe *philo)
 	return (0);
 }
 
+
 int					philo(void *param)
 {
 	t_phisolophe	philo;
@@ -212,6 +213,7 @@ int					philo(void *param)
 		data.state = philo.state;
 		data.id = philo.id;
 		// draw_phil(&data);
+
 		if (update_state(&philo))
 			break ;
 		philo.turn++;

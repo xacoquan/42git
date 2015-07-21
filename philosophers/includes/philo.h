@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #ifndef PHILO_H
 # define PHILO_H
 
@@ -20,7 +19,7 @@
 
 # include <ncurses.h>
 # include <string.h>
-# define DELAY 100000
+# define DELAY 10000
 
 typedef enum	e_state
 {

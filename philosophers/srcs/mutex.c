@@ -24,4 +24,3 @@ void						init_mutex(void)
 			puterror(2, "Could not initialize mutexes\n", 29, 2);
 	}
 }
-

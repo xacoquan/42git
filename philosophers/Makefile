@@ -6,7 +6,7 @@
 #    By: xacoquan <xacoquan@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 11:54:29 by achazal           #+#    #+#              #
-#    Updated: 2015/06/04 12:26:20 by xacoquan         ###   ########.fr        #
+#    Updated: 2015/07/10 14:20:31 by xacoquan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,6 @@ FILES	=	main.c								\
 			out.c								\
 			philo.c								\
 			threads.c							\
-			draw.c
 
 INC		=	-I./includes
 CCFLAGS	=	 -g -lncurses

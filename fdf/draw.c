@@ -6,7 +6,7 @@
 /*   By: xacoquan <xacoquan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/09 15:28:09 by xacoquan          #+#    #+#             */
-/*   Updated: 2015/06/18 00:07:51 by xacoquan         ###   ########.fr       */
+/*   Updated: 2015/07/21 17:45:36 by xacoquan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void	draw_line(t_vector *p1, t_vector *p2, t_env *data)
 {
 	double	dx;
 	double	dy;
-
+c
 	dx = abs(p2->newx - p1->newx);
 	dy = abs(p2->newy - p1->newy);
 	if (dx > dy && (p1->newx > p2->newx))

@@ -56,8 +56,8 @@ void			*draw(void *arg)
 		data->i = 0;
 		if (data->end != 0)
 			remove_life(data);
-		draw2(data, 9);
-		wrefresh(data->win);
+		// draw2(data, 9);
+		// wrefresh(data->win);
 		usleep(1 * 1000000);
 		now = time(0);
 	}
